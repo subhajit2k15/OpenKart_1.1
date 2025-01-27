@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegTest_Suite">
+
+<listeners>
+	<listener class-name="utilities.ExtentReportManager"></listener>
+</listeners>
+
+  <test thread-count="5" name="RegTest_Test">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="os" value="Windows"/>
+    <classes>
+      <class name="testCases.TC_001_AccountRegistration_BulkTest"/>
+    </classes>
+  </test> <!-- RegTest_Test -->
+</suite> <!-- RegTest_Suite -->
